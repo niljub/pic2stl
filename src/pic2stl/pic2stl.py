@@ -86,7 +86,4 @@ def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base
     # Write to file
     output_mesh.save(output_path)
 
-# Example usage
-image_to_stl('transparent.webp', 'output.stl', extrusion_height=3, add_base=False, base_thickness=1)
-
 
