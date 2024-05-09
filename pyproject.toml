@@ -17,6 +17,16 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+dependencies = [
+numpy,
+numpy-stl,
+pillow,
+python-utils,
+scipy,
+trimesh,
+typing-extensions,
+]
+
 [project.urls]
 Homepage = "https://github.com/niljub/pic2stl/"
 Issues = "https://github.com/niljub/pic2stl/issues"
