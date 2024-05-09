@@ -1,0 +1,8 @@
+-i https://pypi.org/simple
+numpy==1.26.4; python_version >= '3.9'
+numpy-stl==3.1.1; python_version >= '3.7'
+pillow==10.3.0; python_version >= '3.8'
+python-utils==3.8.2; python_version >= '3.9'
+scipy==1.13.0; python_version >= '3.9'
+trimesh==4.3.2; python_version >= '3.7'
+typing-extensions==4.11.0; python_version >= '3.8'
