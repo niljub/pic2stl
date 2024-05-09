@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "2d2stl_niljub"
+name = "2d2stl"
 version = "0.0.1"
 authors = [
   { name="niljub", email="dickergamer@tutanota.com" },
