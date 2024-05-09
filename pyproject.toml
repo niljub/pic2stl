@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "img2stl"
-version = "0.0.2"
+name = "pic2stl"
+version = "0.0.1"
 authors = [
   { name="niljub", email="dickergamer@tutanota.com" },
 ]
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/niljub/img2stl/"
-Issues = "https://github.com/niljub/img2stl/issues"
+Homepage = "https://github.com/niljub/pic2stl/"
+Issues = "https://github.com/niljub/pic2stl/issues"

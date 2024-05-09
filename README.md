@@ -1,7 +1,7 @@
-# 2d2stl Image Converter
+# pic2stl Image Converter
 
 ## Overview
-`2d2stl` is a Python package that converts images to 3D STL models. It reads an image, translates it into a 3D mesh, and exports the mesh in STL format. This package is ideal for creating 3D printable models from logos, silhouettes, and other high-contrast images.
+`pic2stl` is a Python package that converts images to 3D STL models. It reads an image, translates it into a 3D mesh, and exports the mesh in STL format. This package is ideal for creating 3D printable models from logos, silhouettes, and other high-contrast images.
 
 ## Features
 - Convert images to 3D STL meshes
