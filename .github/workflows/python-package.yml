@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/img2stl  # Replace img2stl with your PyPI project name
+      url: https://pypi.org/p/pic2stl  # Replace pic2stl with your PyPI project name
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
 
@@ -100,7 +100,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/img2stl
+      url: https://test.pypi.org/p/pic2stl
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
