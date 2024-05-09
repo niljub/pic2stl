@@ -18,13 +18,13 @@ classifiers = [
 ]
 
 dependencies = [
-numpy==1.26.4,
-numpy-stl==3.1.1, 
-pillow==10.3.0,
-python-utils==3.8.2,
-scipy==1.13.0,
-trimesh==4.3.2, 
-typing-extensions==4.11.0,
+  "numpy==1.26.4",
+  "numpy-stl==3.1.1", 
+  "pillow==10.3.0",
+  "python-utils==3.8.2",
+  "scipy==1.13.0",
+  "trimesh==4.3.2", 
+  "typing-extensions==4.11.0",
 ]
 
 [project.urls]
