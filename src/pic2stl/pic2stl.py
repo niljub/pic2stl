@@ -2,9 +2,12 @@ import numpy as np
 from PIL import Image
 from stl import mesh
 from scipy.spatial import cKDTree
+import cairosvg
 
+def svg_to_png(svg_path, png_path):
+    cairosvg.svg2png(url=svg_path, write_to=png_path)
 
-def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base_thickness=1):
+def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base_thickness=1, invert_image=False):
     # Load the image and convert to grayscale
     img = Image.open(image_path).convert('L')
     
@@ -13,7 +16,10 @@ def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base
     img = img.point(lambda p: 1 if p > threshold else 0, mode='1')
     
     # Convert the image to a numpy array
-    array = np.array(img)
+    if invert_image:
+        array = 1-np.array(img)
+    else:
+        array = np.array(img)
 
     
     # Get dimensions
@@ -68,7 +74,7 @@ def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base
         base_faces = [
             [base_offset, base_offset + 1, base_offset + 2], [base_offset, base_offset + 2, base_offset + 3],  # Bottom face
             [base_offset + 4, base_offset + 5, base_offset + 6], [base_offset + 4, base_offset + 6, base_offset + 7],  # Top face
-            [base_offset, base_offset + 1, base_offset + 5], [base_offset, base_offset + 5, base_offset + 4],  # Side faces
+            [base_offset, base_offset + 1, base_offset + 5], [base_offset + 5, base_offset + 4],  # Side faces
             [base_offset + 1, base_offset + 2, base_offset + 6], [base_offset + 1, base_offset + 6, base_offset + 5],
             [base_offset + 2, base_offset + 3, base_offset + 7], [base_offset + 2, base_offset + 7, base_offset + 6],
             [base_offset + 3, base_offset, base_offset + 4], [base_offset + 3, base_offset + 4, base_offset + 7]
