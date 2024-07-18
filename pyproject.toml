@@ -8,7 +8,7 @@ version = "10.0.8"
 authors = [
   { name="niljub", email="dickergamer@tutanota.com" },
 ]
-description = "img2stl is a Python package that converts images to 3D STL models."
+description = "img2stl is a Python package that converts an image to a 3D STL models."
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
@@ -20,7 +20,7 @@ classifiers = [
 dependencies = [
   "numpy==1.26.4",
   "numpy-stl==3.1.1", 
-  "pillow==10.3.0",
+  "pillow==10.3.0", 
   "python-utils==3.8.2",
   "scipy==1.13.0",
   "trimesh==4.3.2", 
