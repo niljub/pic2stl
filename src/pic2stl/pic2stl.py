@@ -74,11 +74,12 @@ def image_to_stl(image_path, output_path, extrusion_height, add_base=False, base
         base_faces = [
             [base_offset, base_offset + 1, base_offset + 2], [base_offset, base_offset + 2, base_offset + 3],  # Bottom face
             [base_offset + 4, base_offset + 5, base_offset + 6], [base_offset + 4, base_offset + 6, base_offset + 7],  # Top face
-            [base_offset, base_offset + 1, base_offset + 5], [base_offset + 5, base_offset + 4],  # Side faces
+            [base_offset, base_offset + 1, base_offset + 5], [base_offset, base_offset + 5, base_offset + 4],  # Side faces
             [base_offset + 1, base_offset + 2, base_offset + 6], [base_offset + 1, base_offset + 6, base_offset + 5],
             [base_offset + 2, base_offset + 3, base_offset + 7], [base_offset + 2, base_offset + 7, base_offset + 6],
             [base_offset + 3, base_offset, base_offset + 4], [base_offset + 3, base_offset + 4, base_offset + 7]
         ]
+        
         faces.extend(base_faces)
     
     # Create the mesh
